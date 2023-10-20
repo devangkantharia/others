@@ -412,9 +412,11 @@ main {
 .content__item-image {
     max-width: 100%;
     padding: 10px 0;
-	img {
-		width: 100%;
-	}
+}
+
+
+.content__item-image img {
+	width: 100%;
 }
 
 .content__close {
