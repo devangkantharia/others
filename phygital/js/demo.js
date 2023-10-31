@@ -539,7 +539,9 @@
 			itemSelector: '.grid__item',
 			columnWidth: 260,
 			gutter: 100,
-			fitWidth: true
+			fitWidth: true,
+			horizontalOrder: true
+
 		});
 	});
 }
