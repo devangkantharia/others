@@ -1,7 +1,0 @@
-{
-    "forceReCreateRepo": true,
-    "targetRepoPath": "my-open-source-repo",
-    "sourceRepoPath": ".",
-    "allowedPaths": ["*"],
-    "ignoredPaths": ["phygital/*"]
-}
