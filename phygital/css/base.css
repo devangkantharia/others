@@ -372,7 +372,7 @@ main {
 	font-size: 60px;
 	line-height: 1;
 	text-align: center;
-	margin: 0 auto;
+	margin: 30px auto 0;
 	padding: 2vw 5vw;
 	white-space: nowrap;
 	/* grid-area: 1 / 1 / 1 / 1; */
@@ -453,6 +453,10 @@ main {
 .content__close,
 .content__indicator {
 	opacity: 0;
+}
+
+.center {
+	text-align: center;
 }
 
 @media screen and (min-width: 20em) and (max-width: 55em) {
