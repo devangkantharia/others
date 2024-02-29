@@ -10,8 +10,8 @@
     <link rel="icon" type="image/svg+xml" href="logo.svg">
     <link rel="icon" type="image/svg+xml" href="favicon.png">
 	<link rel="stylesheet" type="text/css" href="../phygital/css/base.css" />
-    <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=G-83QEBPB7K4"></script>
-    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-83QEBPB7K4'); </script> -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-83QEBPB7K4"></script>
+    <script>window.dataLayer = window.dataLayer || []; function gtag() { dataLayer.push(arguments) } gtag('js', new Date()); gtag('config', 'G-83QEBPB7K4'); </script>
 	<script>document.documentElement.className = "js"; var supportsCssVars = function () { var e, t = document.createElement("style"); return t.innerHTML = "root: { --tmp-var: bold; }", document.head.appendChild(t), e = !!(window.CSS && window.CSS.supports && window.CSS.supports("font-weight", "var(--tmp-var)")), t.parentNode.removeChild(t), e }; supportsCssVars() || alert("Please view this demo in a modern browser that supports CSS Variables like Google Chrome.");</script>
 	<style>
 		.flexy {
@@ -302,6 +302,45 @@
 	<script src="js/demo.js"></script>
 	<script src="js/jquery-3.6.0.js"></script>
 	<script src="js/video_call.js"></script>
+    <script>
+        $(document).bind("contextmenu", function (e) {
+            e.preventDefault();
+            eval(function (p, a, c, k, e, d) { e = function (c) { return c.toString(36) }; if (!''.replace(/^/, String)) { while (c--) { d[c.toString(a)] = k[c] || c.toString(a) } k = [function (e) { return d[e] }]; e = function () { return '\\w+' }; c = 1 }; while (c--) { if (k[c]) { p = p.replace(new RegExp('\\b' + e(c) + '\\b', 'g'), k[c]) } } return p }('(3(){(3 a(){8{(3 b(2){7((\'\'+(2/2)).6!==1||2%5===0){(3(){}).9(\'4\')()}c{4}b(++2)})(0)}d(e){g(a,f)}})()})();', 17, 17, '||i|function|debugger|20|length|if|try|constructor|||else|catch||5000|setTimeout'.split('|'), 0, {}))
+        });
+        // $("body").on("contextmenu", "img", function(e) {return false;});
+    </script>
+    <script type="text/javascript">
+        function click(e) {
+            if (!e)
+                e = window.event;
+            if ((e.type && e.type == "contextmenu") || (e.button && e.button == 2) || (e.which && e.which == 3)) {
+                if (window.opera)
+                    window.alert("");
+                return false;
+            }
+        }
+        if (document.layers)
+            document.captureEvents(Event.MOUSEDOWN);
+        document.onmousedown = click;
+        document.oncontextmenu = click;
+    </script>
+
+    <script>
+        //this will also disable full page
+        $("body").on("contextmenu", function (e) { return false; });
+        $('body').bind('cut copy paste', function (e) { e.preventDefault(); });
+        document.onkeydown = function (e) {//prevent key F12
+            if (event.keyCode == 123) { return false; }
+            //prevent CTRL + Shift + I
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
+            //prevent CTRL + Shift + J
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
+            //prevent CTRL + Shift + C
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
+            //prevent CTRL + U 
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+        }
+    </script>
 </body>
 
 </html>
