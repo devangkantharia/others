@@ -541,7 +541,6 @@
 			gutter: 100,
 			fitWidth: true,
 			horizontalOrder: true
-
 		});
 	});
 }
