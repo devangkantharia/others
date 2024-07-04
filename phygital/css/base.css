@@ -285,7 +285,7 @@ main {
 	transform: rotate3d(0,0,1,-4deg);
 }
 
-.grid__item-title {
+/* .grid__item-title {
 	font-weight: normal;
 	position: absolute;
 	left: 0;
@@ -295,6 +295,21 @@ main {
 	writing-mode: vertical-rl;
 	transform: rotate(180deg);
 	transform-origin: 0 50%;
+} */
+
+.grid__item-title {
+    font-weight: normal;
+	font-size: 1em;
+    position: absolute;
+    left: -40px;
+    bottom: -20px;
+    margin: 0 0 0 3rem;
+    padding-left: 20px;
+	max-width: 180px;
+    /* -webkit-writing-mode: vertical-rl; */
+    /* writing-mode: vertical-rl; */
+    /* transform: rotate(-90deg); */
+    /* transform-origin: 0 50%; */
 }
 
 .grid__item-number {
