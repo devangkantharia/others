@@ -332,7 +332,8 @@
 			// Get the current scroll position.
 			this.scrollPos = window.scrollY;
 			// Disable page scrolling.
-			disableScroll();
+			// disableScroll();
+			enableScroll();
 			// Disable tilt.
 			allowTilt = false;
 			// Set the current value (index of the clicked item).
@@ -408,7 +409,7 @@
 			window.scrollTo(0, this.scrollPos);
 			contentEl.DOM.el.parentNode.style.position = 'fixed';
 			// Disable page scrolling.
-			disableScroll();
+			// disableScroll();
 			// Showing the grid scroll.
 			this.DOM.gridWrap.classList.remove('grid-wrap--hidden');
 			// The item that is open.
